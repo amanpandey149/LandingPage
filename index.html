@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Aether Labs - Next-generation Web Development, mobile app engineering, futuristic UI/UX design, and digital growth marketing. Fusing intelligence with elegant web design.">
+    <title>Aether Labs | Premium Web Development & Digital Startup</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Custom Spotlight Cursor Glow (Futuristic background interactive light) -->
+    <div class="mouse-glow" id="mouse-glow"></div>
+
+    <!-- Background Gradient Orbs for Futuristic Spatial Depth -->
+    <div class="bg-orbs">
+        <div class="orb orb-1"></div>
+        <div class="orb orb-2"></div>
+        <div class="orb orb-3"></div>
+    </div>
+
+    <!-- 1️⃣ Responsive Navbar (Sticky & Glassmorphic) -->
+    <header class="navbar-header" id="header">
+        <div class="container navbar-container">
+            <!-- Brand Logo -->
+            <a href="#" class="logo" id="nav-logo">
+                <span class="logo-icon"><i class="fa-solid fa-cubes-stacked"></i></span>
+                <span class="logo-text">Aether<span class="highlight">Labs</span></span>
+            </a>
+            
+            <!-- Navigation Menu Links -->
+            <nav class="nav-menu" id="nav-menu">
+                <ul class="nav-list">
+                    <li><a href="#hero" class="nav-link active">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#services" class="nav-link">Services</a></li>
+                    <li><a href="#features" class="nav-link">Features</a></li>
+                    <li><a href="#stats" class="nav-link">Stats</a></li>
+                    <li><a href="#testimonials" class="nav-link">Testimonials</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+                <!-- Mobile Navigation CTA -->
+                <div class="nav-cta-mobile">
+                    <a href="#contact" class="btn btn-primary btn-sm">Launch Request</a>
+                </div>
+            </nav>
+
+            <!-- Action Buttons & Hamburger Menu -->
+            <div class="nav-actions">
+                <a href="#contact" class="btn btn-glass btn-sm hide-mobile">Get Started</a>
+                <button class="menu-toggle" id="menu-toggle" aria-label="Toggle navigation menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- 2️⃣ Hero Section (Animated elements, gradients, and custom graphic) -->
+        <section id="hero" class="hero-section">
+            <div class="container hero-container">
+                <!-- Hero Textual Content -->
+                <div class="hero-content scroll-reveal">
+                    <div class="badge">
+                        <span class="badge-dot"></span>
+                        <span class="badge-text">PIONEERING DIGITAL ARCHITECTURE</span>
+                    </div>
+                    <h1 class="hero-title">
+                        We Engineer <br>
+                        <span class="text-gradient">Digital Frontiers</span>
+                    </h1>
+                    <p class="hero-description">
+                        Aether Labs constructs stunning, high-performance web systems and digital platforms. Fusing clean software architecture with premium glassmorphism, we build websites that hook attention.
+                    </p>
+                    <div class="hero-actions">
+                        <a href="#contact" class="btn btn-primary" id="hero-cta-primary">
+                            <span>Launch Project</span>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                        <a href="#services" class="btn btn-outline" id="hero-cta-secondary">
+                            <span>Explore Services</span>
+                        </a>
+                    </div>
+                    <!-- Trust Logos Widget -->
+                    <div class="hero-trust">
+                        <p class="trust-text">TRUSTED BY HYPER-GROWTH STARTUPS</p>
+                        <div class="trust-logos">
+                            <div class="trust-logo"><i class="fa-brands fa-stripe"></i> stripe</div>
+                            <div class="trust-logo"><i class="fa-brands fa-aws"></i> aws</div>
+                            <div class="trust-logo"><i class="fa-brands fa-cloudflare"></i> cloudflare</div>
+                            <div class="trust-logo"><i class="fa-brands fa-github"></i> github</div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Hero Visual Graphic Panel -->
+                <div class="hero-visual scroll-reveal delay-200">
+                    <div class="image-wrapper">
+                        <!-- Floating high-tech abstract asset -->
+                        <img src="assets/images/hero_graphic.png" alt="Futuristic 3D tech render showing luminous floating shapes" class="floating-image" id="hero-main-img">
+                        <!-- Floating glassmorphic widgets -->
+                        <div class="glass-tag tag-1">
+                            <span class="tag-icon"><i class="fa-solid fa-bolt"></i></span>
+                            <div class="tag-info">
+                                <span class="tag-title">99.9%</span>
+                                <span class="tag-desc">Performance Rating</span>
+                            </div>
+                        </div>
+                        <div class="glass-tag tag-2">
+                            <span class="tag-icon"><i class="fa-solid fa-shield-halved"></i></span>
+                            <div class="tag-info">
+                                <span class="tag-title">Zero-Trust</span>
+                                <span class="tag-desc">Security Protocol</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Bottom structural section divider -->
+            <div class="section-divider"></div>
+        </section>
+
+        <!-- 3️⃣ About Section (Visual grid representing startup values) -->
+        <section id="about" class="about-section">
+            <div class="container">
+                <div class="section-header scroll-reveal">
+                    <span class="section-tag">ABOUT OUR STUDIO</span>
+                    <h2 class="section-title">Architects of Technical Premium Design</h2>
+                    <p class="section-subtitle">We merge cutting-edge computer engineering principles with gorgeous aesthetics to build deployment-ready digital environments.</p>
+                </div>
+                
+                <div class="about-grid">
+                    <!-- Left: Graphic Card Array -->
+                    <div class="about-visual-cards scroll-reveal">
+                        <div class="about-card card-large">
+                            <div class="card-glow-bg"></div>
+                            <div class="about-card-icon"><i class="fa-solid fa-circle-nodes"></i></div>
+                            <h3>Our Ultimate Mission</h3>
+                            <p>To eliminate sluggish web templates and build highly immersive, lightning-fast digital assets that feel tactile, secure, and ready to scale infinitely.</p>
+                        </div>
+                        <div class="about-card card-small">
+                            <div class="card-glow-bg"></div>
+                            <div class="about-card-icon"><i class="fa-solid fa-eye"></i></div>
+                            <h3>Our Vision</h3>
+                            <p>Creating highly responsive, next-gen systems that integrate artificial intelligence and micro-interactions seamlessly.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Right: Narrative Details & Core Competence -->
+                    <div class="about-text-content scroll-reveal delay-200">
+                        <h3 class="about-heading">Transforming ambitious startup layouts into dynamic, secure systems.</h3>
+                        <p class="about-desc">
+                            Aether Labs was founded to dismantle outdated paradigms in web design. We believe that speed, visual excellence, and military-grade security should co-exist in harmony.
+                        </p>
+                        <p class="about-desc">
+                            Our team engineers layouts using serverless edge CDNs, beautiful Custom Properties, and responsive flexboxes, making sure your site runs flawlessly across all devices.
+                        </p>
+                        <ul class="about-features">
+                            <li><span class="feat-icon"><i class="fa-solid fa-circle-check"></i></span> Jamstack & Lightning Serverless Architecture</li>
+                            <li><span class="feat-icon"><i class="fa-solid fa-circle-check"></i></span> Premium Glassmorphic Cards & Fluid UI Elements</li>
+                            <li><span class="feat-icon"><i class="fa-solid fa-circle-check"></i></span> Multi-region Load Balancing Protocols</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="section-divider"></div>
+        </section>
+
+        <!-- 4️⃣ Services Section (4 Animated Cards: Web, App, UI/UX, Marketing) -->
+        <section id="services" class="services-section">
+            <div class="container">
+                <div class="section-header scroll-reveal">
+                    <span class="section-tag">CAPABILITIES</span>
+                    <h2 class="section-title">Services Built to Scale</h2>
+                    <p class="section-subtitle">We design and construct premium web infrastructures that outperform standard specifications and attract customers.</p>
+                </div>
+                
+                <div class="services-grid">
+                    <!-- Service 1: Web Development -->
+                    <div class="service-card scroll-reveal">
+                        <div class="card-glow"></div>
+                        <div class="service-icon icon-cyan">
+                            <i class="fa-solid fa-laptop-code"></i>
+                        </div>
+                        <h3 class="service-card-title">Web Development</h3>
+                        <p class="service-card-desc">Engineering gorgeous React, Vue, and high-performance HTML5 websites designed for speed, visual wow-factors, and clean semantic structures.</p>
+                        <ul class="service-bullets">
+                            <li><i class="fa-solid fa-circle-notch"></i> Serverless Edge Deployment</li>
+                            <li><i class="fa-solid fa-circle-notch"></i> Lighthouse scores > 99%</li>
+                        </ul>
+                        <a href="#contact" class="service-link">Outline Project <i class="fa-solid fa-arrow-right-long"></i></a>
+                    </div>
+
+                    <!-- Service 2: App Development -->
+                    <div class="service-card scroll-reveal delay-100">
+                        <div class="card-glow"></div>
+                        <div class="service-icon icon-purple">
+                            <i class="fa-solid fa-mobile-screen-button"></i>
+                        </div>
+                        <h3 class="service-card-title">App Development</h3>
+                        <p class="service-card-desc">Constructing responsive cross-platform mobile apps for iOS and Android, delivering native performance and offline-first functionalities.</p>
+                        <ul class="service-bullets">
+                            <li><i class="fa-solid fa-circle-notch"></i> Optimized state engines</li>
+                            <li><i class="fa-solid fa-circle-notch"></i> Frictionless API bindings</li>
+                        </ul>
+                        <a href="#contact" class="service-link">Outline Project <i class="fa-solid fa-arrow-right-long"></i></a>
+                    </div>
+
+                    <!-- Service 3: UI/UX Design -->
+                    <div class="service-card scroll-reveal delay-200">
+                        <div class="card-glow"></div>
+                        <div class="service-icon icon-magenta">
+                            <i class="fa-solid fa-compass-drafting"></i>
+                        </div>
+                        <h3 class="service-card-title">UI/UX Design</h3>
+                        <p class="service-card-desc">Forging premium interactive prototypes, high-end dark glassmorphism styling tokens, and seamless micro-animations that engage visitors.</p>
+                        <ul class="service-bullets">
+                            <li><i class="fa-solid fa-circle-notch"></i> Custom design systems</li>
+                            <li><i class="fa-solid fa-circle-notch"></i> Tactical micro-animations</li>
+                        </ul>
+                        <a href="#contact" class="service-link">Outline Project <i class="fa-solid fa-arrow-right-long"></i></a>
+                    </div>
+
+                    <!-- Service 4: Digital Marketing -->
+                    <div class="service-card scroll-reveal delay-300">
+                        <div class="card-glow"></div>
+                        <div class="service-icon icon-blue">
+                            <i class="fa-solid fa-chart-line"></i>
+                        </div>
+                        <h3 class="service-card-title">Digital Marketing</h3>
+                        <p class="service-card-desc">Maximizing online visibility and search presence utilizing advanced technical SEO auditing, schema optimization, and performance-based marketing loops.</p>
+                        <ul class="service-bullets">
+                            <li><i class="fa-solid fa-circle-notch"></i> Accelerated search indexation</li>
+                            <li><i class="fa-solid fa-circle-notch"></i> Advanced audience growth analytics</li>
+                        </ul>
+                        <a href="#contact" class="service-link">Outline Project <i class="fa-solid fa-arrow-right-long"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="section-divider"></div>
+        </section>
+
+        <!-- 5️⃣ Features Section (Fast Performance, Secure Platform, Responsive Design, 24/7 Support) -->
+        <section id="features" class="features-section">
+            <div class="container">
+                <div class="section-header scroll-reveal">
+                    <span class="section-tag">ELITE INFRASTRUCTURE</span>
+                    <h2 class="section-title">Engineered to Outperform</h2>
+                    <p class="section-subtitle">We pack next-generation engineering highlights into every asset, securing visual elegance and flawless speeds.</p>
+                </div>
+
+                <div class="features-grid-cards">
+                    <!-- Feature Card 1: Fast Performance -->
+                    <div class="feature-glass-card scroll-reveal">
+                        <div class="feature-border-glow"></div>
+                        <div class="feature-icon icon-cyan">
+                            <i class="fa-solid fa-bolt-lightning"></i>
+                        </div>
+                        <h3 class="feature-card-title">Fast Performance</h3>
+                        <p class="feature-card-desc">With asset-minification, lightweight rendering trees, and lazy loading routines, we guarantee your page loads in milliseconds.</p>
+                    </div>
+
+                    <!-- Feature Card 2: Secure Platform -->
+                    <div class="feature-glass-card scroll-reveal delay-100">
+                        <div class="feature-border-glow"></div>
+                        <div class="feature-icon icon-purple">
+                            <i class="fa-solid fa-shield-halved"></i>
+                        </div>
+                        <h3 class="feature-card-title">Secure Platform</h3>
+                        <p class="feature-glass-card-desc">Implementing strict Content Security Policies, sanitized data inputs, and zero exposed keys to shield against vectors.</p>
+                    </div>
+
+                    <!-- Feature Card 3: Responsive Design -->
+                    <div class="feature-glass-card scroll-reveal delay-200">
+                        <div class="feature-border-glow"></div>
+                        <div class="feature-icon icon-magenta">
+                            <i class="fa-solid fa-display"></i>
+                        </div>
+                        <h3 class="feature-card-title">Responsive Design</h3>
+                        <p class="feature-glass-card-desc">Topologies adapt cleanly. Mobile screen flows, high-resolution desktop terminals, and tablets load gorgeous layouts without breaks.</p>
+                    </div>
+
+                    <!-- Feature Card 4: 24/7 Support -->
+                    <div class="feature-glass-card scroll-reveal delay-300">
+                        <div class="feature-border-glow"></div>
+                        <div class="feature-icon icon-blue">
+                            <i class="fa-solid fa-headset"></i>
+                        </div>
+                        <h3 class="feature-card-title">24/7 Support</h3>
+                        <p class="feature-glass-card-desc">Dedicated technical help loops and direct server diagnostics monitoring to secure absolute performance and keep platforms running.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="section-divider"></div>
+        </section>
+
+        <!-- 6️⃣ Statistics / Counter Section (500+ Clients, 120+ Projects, 5+ Years, 99% Satisfaction) -->
+        <section id="stats" class="stats-section">
+            <div class="container">
+                <div class="stats-grid">
+                    <!-- Stat Card 1 -->
+                    <div class="stat-card scroll-reveal">
+                        <div class="stat-glow"></div>
+                        <div class="stat-icon-wrapper"><i class="fa-solid fa-users"></i></div>
+                        <div class="stat-number-flex">
+                            <h3 class="stat-number" data-target="500">0</h3>
+                            <span class="stat-suffix">+</span>
+                        </div>
+                        <p class="stat-label">Happy Clients</p>
+                    </div>
+
+                    <!-- Stat Card 2 -->
+                    <div class="stat-card scroll-reveal delay-100">
+                        <div class="stat-glow"></div>
+                        <div class="stat-icon-wrapper"><i class="fa-solid fa-layer-group"></i></div>
+                        <div class="stat-number-flex">
+                            <h3 class="stat-number" data-target="120">0</h3>
+                            <span class="stat-suffix">+</span>
+                        </div>
+                        <p class="stat-label">Projects Completed</p>
+                    </div>
+
+                    <!-- Stat Card 3 -->
+                    <div class="stat-card scroll-reveal delay-200">
+                        <div class="stat-glow"></div>
+                        <div class="stat-icon-wrapper"><i class="fa-solid fa-timeline"></i></div>
+                        <div class="stat-number-flex">
+                            <h3 class="stat-number" data-target="5">0</h3>
+                            <span class="stat-suffix">+</span>
+                        </div>
+                        <p class="stat-label">Years of Experience</p>
+                    </div>
+
+                    <!-- Stat Card 4 -->
+                    <div class="stat-card scroll-reveal delay-300">
+                        <div class="stat-glow"></div>
+                        <div class="stat-icon-wrapper"><i class="fa-solid fa-circle-check"></i></div>
+                        <div class="stat-number-flex">
+                            <h3 class="stat-number" data-target="99">0</h3>
+                            <span class="stat-suffix">%</span>
+                        </div>
+                        <p class="stat-label">Satisfaction Score</p>
+                    </div>
+                </div>
+            </div>
+            <div class="section-divider"></div>
+        </section>
+
+        <!-- 7️⃣ Testimonials Section (Modern Carousel / Slider Layout) -->
+        <section id="testimonials" class="testimonials-section">
+            <div class="container">
+                <div class="section-header scroll-reveal">
+                    <span class="section-tag">TESTIMONIALS</span>
+                    <h2 class="section-title">Valued by High-Growth Innovators</h2>
+                    <p class="section-subtitle">Read reviews from executives and founders who partnered with Aether Labs to construct their next-gen web presence.</p>
+                </div>
+                
+                <!-- Testimonial Slider / Carousel Container -->
+                <div class="testimonials-carousel-container scroll-reveal">
+                    <div class="testimonials-track-viewport">
+                        <div class="testimonials-track" id="testimonials-track">
+                            <!-- Testimonial Slide 1 -->
+                            <div class="testimonial-slide">
+                                <div class="testimonial-card">
+                                    <div class="card-border-glow"></div>
+                                    <div class="stars">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                    <p class="testimonial-quote">
+                                        "Aether Labs didn't just build a site; they crafted a digital asset. Our platform's speed rose by 300%, and conversion rates skyrocketed by 38% in the first two weeks of our product launch."
+                                    </p>
+                                    <div class="testimonial-author">
+                                        <div class="author-avatar-wrapper">
+                                            <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=256&auto=format&fit=crop" alt="Sarah Jenkins, Chief Executive Officer" class="author-avatar">
+                                        </div>
+                                        <div class="author-info">
+                                            <span class="author-name">Sarah Jenkins</span>
+                                            <span class="author-role">Founder, Synthetix AI</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Testimonial Slide 2 -->
+                            <div class="testimonial-slide">
+                                <div class="testimonial-card">
+                                    <div class="card-border-glow"></div>
+                                    <div class="stars">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                    <p class="testimonial-quote">
+                                        "The degree of technical intelligence inside their team is rare. Their dynamic UX design systems and high-end dark glassmorphism aesthetics gave our startup a massive competitive edge."
+                                    </p>
+                                    <div class="testimonial-author">
+                                        <div class="author-avatar-wrapper avatar-purple">
+                                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=256&auto=format&fit=crop" alt="Marcus Vane, VP of Product" class="author-avatar">
+                                        </div>
+                                        <div class="author-info">
+                                            <span class="author-name">Marcus Vane</span>
+                                            <span class="author-role">VP of Product, Hyperion</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Testimonial Slide 3 -->
+                            <div class="testimonial-slide">
+                                <div class="testimonial-card">
+                                    <div class="card-border-glow"></div>
+                                    <div class="stars">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                    <p class="testimonial-quote">
+                                        "Their serverless cloud setup is incredibly stable. We handled a 50,000 requests-per-minute traffic surge during our token launch without a single millisecond of downtime."
+                                    </p>
+                                    <div class="testimonial-author">
+                                        <div class="author-avatar-wrapper">
+                                            <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=256&auto=format&fit=crop" alt="Elena Rostova, Lead Engineer" class="author-avatar">
+                                        </div>
+                                        <div class="author-info">
+                                            <span class="author-name">Elena Rostova</span>
+                                            <span class="author-role">Technical Lead, Apex Cloud</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slide Controls -->
+                    <button class="carousel-control prev" id="carousel-prev" aria-label="Previous Slide">
+                        <i class="fa-solid fa-chevron-left"></i>
+                    </button>
+                    <button class="carousel-control next" id="carousel-next" aria-label="Next Slide">
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </button>
+
+                    <!-- Indicators -->
+                    <div class="carousel-dots" id="carousel-dots">
+                        <span class="dot active" data-index="0"></span>
+                        <span class="dot" data-index="1"></span>
+                        <span class="dot" data-index="2"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="section-divider"></div>
+        </section>
+
+        <!-- 8️⃣ Contact Section (Secure Interactive Form & Panel Details) -->
+        <section id="contact" class="contact-section">
+            <div class="container">
+                <div class="contact-grid">
+                    <!-- Left: Detail Column -->
+                    <div class="contact-info-panel scroll-reveal">
+                        <span class="section-tag">CONTACT OUR TEAM</span>
+                        <h2 class="section-title">Let's Build Something <span class="text-gradient">Legendary</span></h2>
+                        <p class="contact-panel-desc">Ready to scale beyond standard limits? Get in touch with our engineers today to map out your startup's web solution.</p>
+                        
+                        <div class="contact-details">
+                            <div class="contact-detail-item">
+                                <span class="contact-icon"><i class="fa-solid fa-envelope"></i></span>
+                                <div class="contact-item-info">
+                                    <span class="contact-label">Email our team</span>
+                                    <a href="mailto:hello@aetherlabs.io" class="contact-value">hello@aetherlabs.io</a>
+                                </div>
+                            </div>
+                            <div class="contact-detail-item">
+                                <span class="contact-icon"><i class="fa-solid fa-phone"></i></span>
+                                <div class="contact-item-info">
+                                    <span class="contact-label">Call direct</span>
+                                    <a href="tel:+15552384377" class="contact-value">+1 (555) 238-AETH</a>
+                                </div>
+                            </div>
+                            <div class="contact-detail-item">
+                                <span class="contact-icon"><i class="fa-solid fa-map-pin"></i></span>
+                                <div class="contact-item-info">
+                                    <span class="contact-label">Decentralized HQ</span>
+                                    <span class="contact-value">San Francisco, CA / London, UK</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Pulse Status Indicator widget -->
+                        <div class="status-indicator">
+                            <span class="indicator-pulse"></span>
+                            <span class="indicator-text">Currently booking projects for Q3/Q4</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Right: Glass Contact Card -->
+                    <div class="contact-form-panel scroll-reveal delay-200">
+                        <div class="glass-form-card">
+                            <form id="contact-form" class="interactive-form">
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <input type="text" id="form-name" required placeholder=" ">
+                                        <label for="form-name">Full Name</label>
+                                        <span class="input-focus-line"></span>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="email" id="form-email" required placeholder=" ">
+                                        <label for="form-email">Email Address</label>
+                                        <span class="input-focus-line"></span>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" id="form-subject" required placeholder=" ">
+                                    <label for="form-subject">Project Topic</label>
+                                    <span class="input-focus-line"></span>
+                                </div>
+                                <div class="form-group">
+                                    <textarea id="form-message" required rows="5" placeholder=" "></textarea>
+                                    <label for="form-message">Tell us about your project requirements...</label>
+                                    <span class="input-focus-line"></span>
+                                </div>
+                                
+                                <button type="submit" class="btn btn-primary btn-block" id="form-submit-btn">
+                                    <span class="btn-text">Transmit Request</span>
+                                    <span class="btn-spinner"><i class="fa-solid fa-circle-notch fa-spin"></i></span>
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- 9️⃣ Footer Section (Minimal Modern Design) -->
+    <footer class="footer-section">
+        <div class="container footer-container">
+            <div class="footer-top">
+                <!-- Branding column -->
+                <div class="footer-brand">
+                    <a href="#" class="logo">
+                        <span class="logo-icon"><i class="fa-solid fa-cubes-stacked"></i></span>
+                        <span class="logo-text">Aether<span class="highlight">Labs</span></span>
+                    </a>
+                    <p class="footer-brand-desc">Architecting premium web interfaces and cloud ecosystems. Fusing visual branding design with modern serverless development principles.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Twitter X" class="social-link"><i class="fa-brands fa-x-twitter"></i></a>
+                        <a href="#" aria-label="Github" class="social-link"><i class="fa-brands fa-github"></i></a>
+                        <a href="#" aria-label="LinkedIn" class="social-link"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="#" aria-label="Discord" class="social-link"><i class="fa-brands fa-discord"></i></a>
+                    </div>
+                </div>
+
+                <!-- Links column grid -->
+                <div class="footer-links-grid">
+                    <div class="footer-link-col">
+                        <h4>Platform</h4>
+                        <ul>
+                            <li><a href="#hero">Home</a></li>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#services">Services</a></li>
+                            <li><a href="#features">Features</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-link-col">
+                        <h4>Services</h4>
+                        <ul>
+                            <li><a href="#services">Web Dev</a></li>
+                            <li><a href="#services">App Dev</a></li>
+                            <li><a href="#services">UI/UX Design</a></li>
+                            <li><a href="#services">Digital Marketing</a></li>
+                        </ul>
+                    </div>
+                    <!-- Quick Newsletter column -->
+                    <div class="footer-link-col">
+                        <h4>Newsletter</h4>
+                        <p class="newsletter-desc">Subscribe to secure technical release insights straight to your inbox.</p>
+                        <form id="newsletter-form" class="newsletter-form">
+                            <input type="email" required placeholder="Enter email address" aria-label="Newsletter email">
+                            <button type="submit" aria-label="Subscribe"><i class="fa-solid fa-paper-plane"></i></button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Bottom Copyright bar -->
+            <div class="footer-bottom">
+                <p class="copyright-text">&copy; 2026 Aether Labs Inc. Engineered with premium design. All rights reserved.</p>
+                <div class="footer-bottom-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Interactive Custom Success Popup Modal -->
+    <div class="success-modal-overlay" id="success-modal">
+        <div class="success-modal-card">
+            <div class="modal-icon"><i class="fa-solid fa-circle-check"></i></div>
+            <h3>Transmission Completed</h3>
+            <p>Your secure project brief has been logged and transmitted to the Aether core engineering team. We will establish a secure connection in less than 24 hours.</p>
+            <button class="btn btn-primary btn-sm" id="close-modal-btn">Acknowledge</button>
+        </div>
+    </div>
+
+    <!-- Back-to-Top Floating Glowing Button -->
+    <button id="back-to-top" class="back-to-top-btn" aria-label="Scroll Back to Top">
+        <i class="fa-solid fa-chevron-up"></i>
+    </button>
+
+    <!-- Custom Script -->
+    <script src="script.js"></script>
+</body>
+</html>
