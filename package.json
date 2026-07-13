@@ -1,0 +1,12 @@
+{
+  "name": "aether-labs-landing-page",
+  "version": "1.0.0",
+  "description": "Aether Labs - Premium Digital Technology Landing Page",
+  "scripts": {
+    "dev": "npx serve . --listen 3000",
+    "start": "npx serve . --listen 3000"
+  },
+  "keywords": ["landing-page", "html", "css", "javascript"],
+  "author": "Aman Pandey",
+  "license": "MIT"
+}
